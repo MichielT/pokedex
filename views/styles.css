@@ -1,0 +1,30 @@
+/* custom css for pokedex */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@media all {
+
+	div#pokedex
+	{
+		width: 750px;
+		margin: 50px auto 0 auto;
+	}
+
+	div#left
+	{
+		width: 400px;
+		height: 500px;
+		float: left;
+		position: relative;
+		z-index: 1;
+	}
+
+	div#right
+	{
+		width: 350px;
+		height: 560px;
+		float: left;
+		position: relative;
+	}

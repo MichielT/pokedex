@@ -1,0 +1,59 @@
+
+	<div id="pokedex">
+  <div id="left">
+    <div id="logo"></div>
+    <div id="bg_curve1_left"></div>
+    <div id="bg_curve2_left"></div>
+    <div id="curve1_left">
+      <div id="buttonGlass">
+        <div id="reflect"> </div>
+
+      <div id="picture">
+        <img src= {{ pokemon.img }} />
+      </div>
+
+    </div>
+  
+    <div id="cross">
+      <div id="leftcross">
+        <div id="leftT"></div>
+      </div>
+      <div id="topcross">
+        <div id="upT"></div>
+      </div>
+      <div id="rightcross">
+        <div id="rightT"></div>
+      </div>
+      <div id="midcross">
+        <div id="midCircle"></div>
+      </div>
+      <div id="botcross">
+        <div id="downT"></div>
+      </div>
+    </div>
+  </div>
+  <div id="right">
+    <div id="stats">
+      {{#if err}}
+        <h1>Oh noes!: {{err}} </h1>
+      {{else}}
+      <strong>Name :</strong> {{ pokemon.name }}<br/>
+      <strong>Type :</strong> {{ pokemon.type }}<br/>
+      <strong>Height :</strong> {{ pokemon.height }}<br/>
+      <strong>Weight :</strong> {{ pokemon.weight }}<br/><br/>
+			<strong>Dag or night pokémon :</strong> {{ pokemon.daynight }}<br/><br/>
+      <strong>{{ pokemon.title }}</strong><br/>
+      {{ pokemon.desc }}
+      {{/if}}
+    </div>
+
+    <form action="/" method="post">
+        Pokemon name or id number:<br>
+        <input type="text" name="input" placeholder="54 or Mew">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  </div>
+</div>
