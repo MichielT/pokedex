@@ -3,19 +3,17 @@
 </header>
 
 <div id="top">
-
-<form action="/" method="post">
-		Zoek hier op je Pokémon op naam of nummer:<br>
-		<input type="text" class="left" name="input" placeholder="typ de naam of nummer"><br></br>
-		<input type="submit" class="right" value="Submit">
-</form>
-
+		<form action="/" method="post">
+				Zoek hier op je Pokémon op naam of nummer:<br>
+				<input type="text" class="left" name="input" placeholder="typ de naam of nummer"><br></br>
+				<input type="submit" class="right" value="Submit">
+		</form>
 </div>
 
 <div id="main">
 
 <div class="mainbox">
-  <img src= {{ pokemon.img }} />
+  <img class="errorpoke" src= {{ pokemon.img }} />
     <div class="boxes">
       {{#if err}}
         <h1>Oh noes!: {{err}} </h1>
