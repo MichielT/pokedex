@@ -31,7 +31,6 @@ var defaultPokemon = {
       weight: '43.2',
       type: 'water',
       name: 'Psyduck',
-      daynight: 'Day',
       img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/200653/psykokwak.gif',
       title: 'the duck pokemon',
       desc: 'Uses mysterious powers to perform various attacks.'
@@ -102,7 +101,6 @@ function createPokemon(results) {
    pokemon.height = results.height || '';
    pokemon.weight = results.weight || '';
    pokemon.type = results.types[0].type.name || '';
-   pokemon.time_of_day = results.time_of_day || '';
    pokemon.img = keys.length &&
       (results.sprites[keys[random]] !== null || results.sprites[keys[random]] !== undefined) ?
          results.sprites[keys[random]] : defaultImg;
