@@ -1,12 +1,12 @@
 <header>
-  <img class="logo" title="Reset Game" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon" width="25%">
+  <a href="/">  <img class="logo" title="Reset Game" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon"></a>
 </header>
 
 <div id="top">
 		<form action="/" method="post">
-				Zoek hier op je Pokémon op naam of nummer:<br>
+				<p>Zoek hier je Pokémon op naam of nummer:</p>
 				<input type="text" class="left" name="input" placeholder="typ de naam of nummer"><br></br>
-				<input type="submit" class="right" value="Submit">
+				<input type="submit" class="right" value="Zoek!">
 		</form>
 </div>
 
@@ -18,13 +18,20 @@
       {{#if err}}
         <h1>Oh noes!: {{err}} </h1>
       {{else}}
-      <strong>Name :</strong> {{ pokemon.name }}<br/>
+      <h1>basic info</h1>
+      <strong>Naam :</strong> {{ pokemon.name }}<br/>
+      <strong>Titel :</strong> {{ pokemon.title }} <br/>
       <strong>Type :</strong> {{ pokemon.type }}<br/>
-      <strong>Height :</strong> {{ pokemon.height }}<br/>
-      <strong>Weight :</strong> {{ pokemon.weight }}<br/>
-
-			<br>
+      <strong>Lengte :</strong> {{ pokemon.height }}"<br/>
+      <strong>Gewicht :</strong> {{ pokemon.weight }} Kg<br/>
+      <!-- <strong>Taal :</strong> {{ pokemon.language }}<br/> -->
+      <br>
+      <h1>pokemon description</h1>
       {{ pokemon.desc }}
+      <br>
+      <br>
+      <h1>extra info</h1>
+
       {{/if}}
     </div>
 	</div>

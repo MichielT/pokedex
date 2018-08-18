@@ -18,6 +18,10 @@ header {
 	margin-top: 50px;
 }
 
+.logo {
+	width: 25%;
+}
+
 #top {
 	margin: 0 auto;
 	width: 40%;
@@ -38,6 +42,10 @@ header {
 	background-color: white;
 	margin-top: 5%;
 	padding: 20px;
+}
+
+.mainbox {
+	padding: 5px 30px;
 }
 
 .left {
@@ -80,4 +88,27 @@ header {
 .errorpoke {
 	width: 40%;
 	padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #top {
+		width: 80%;
+		margin-top: 20px;
+	}
+	#main {
+		width: 80%;
+	}
+	body {
+		font-size: 9px;
+		line-height: 18px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+	header {
+		margin-top: 10px;
+	}
+	.logo {
+		width: 40%;
+	}
 }
