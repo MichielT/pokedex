@@ -24,28 +24,15 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-// define some default values to use for our app
-var defaultPokemon = {
-      id: 1,
-      height: '2"072',
-      weight: '43.2',
-      type: 'water',
-      name: 'Psyduck',
-      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/200653/psykokwak.gif',
-      title: 'the duck pokemon',
-      desc: 'Uses mysterious powers to perform various attacks.',
-      language: 'test',
-   },
-   defaultImg = 'https://media.giphy.com/media/JukJD3YfnXPkA/giphy.gif';
-
 // ROUTES FOR OUR APP
 // =============================================================================
 
 // A browser's default method is 'GET', so this
 // is the route that express uses when we visit
 // our site initially.
+
 app.get('/', function(req, res){
-   res.render('pokedexInfo', { pokemon: defaultPokemon });
+   res.render('home');
 });
 
 // This route receives the posted form.
@@ -77,7 +64,7 @@ function getPokemonData(input, res) {
 function getInfo(input, res) {
   request('https://pokeapi.co/api/v2/contest-effect/' + input, function(results) {
     var results = JSON.parse(results.body);
-    console.log(results);
+    log(results);
   },
 )};
 
