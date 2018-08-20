@@ -33,6 +33,17 @@ header {
 	padding: 20px;
 }
 
+#trainerstop {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 950px;
+	height: 100%;
+	border-radius: 10px;
+	background-color: white;
+	margin-top: 5%;
+	padding: 20px;
+}
+
 #main {
 	margin: 0 auto;
 	width: 40%;
@@ -85,12 +96,31 @@ header {
 	padding-bottom: 20px;
 }
 
+.trainers p {
+	font-size: 9px;
+	text-align: justify;
+}
+
+.righbox {
+	margin-bottom: 20px;
+	padding-right: 30px;
+}
+
+.titel {
+	margin: 25px 0 25px 0;
+}
+
 .errorpoke {
 	width: 40%;
 	padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
+.leftbox {
+	width: 50%;
+	float: left;
+}
+
+@media screen and (max-width: 1200px) {
   #top {
 		width: 80%;
 		margin-top: 20px;
