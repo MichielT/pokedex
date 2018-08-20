@@ -18,19 +18,17 @@
       {{#if err}}
         <h1>Oh noes!: {{err}} </h1>
       {{else}}
-      <h1>basic info</h1>
-      <strong>Naam :</strong> {{ pokemon.name }}<br/>
-      <!-- <strong>Titel :</strong> {{ pokemon.title }} <br/> -->
+      <h1>Basic info</h1>
+      <strong>Name :</strong> {{ pokemon.name }}<br/>
       <strong>Type :</strong> {{ pokemon.type }}<br/>
       <strong>Lenght :</strong> {{ pokemon.height }}"<br/>
       <strong>Weight :</strong> {{ pokemon.weight }} Kg<br/>
-      <!-- <strong>Taal :</strong> {{ pokemon.language }}<br/> -->
       <br>
-      <h1>pokemon description</h1>
+      <h1>Pokemon description</h1>
       {{ pokemon.desc }}
       <br>
       <br>
-      <h1>user review</h1>
+      <h1>User review</h1>
       <p><span id="review"></span>/10</p>
       {{/if}}
     </div>
